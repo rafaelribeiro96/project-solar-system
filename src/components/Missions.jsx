@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Title from './Title';
 /* import PropTypes from 'prop-types'; */
 
 class Missions extends Component {
@@ -6,7 +7,7 @@ class Missions extends Component {
     return (
 
       <div data-testid="missions">
-        Conteúdo
+        <Title headline="Missões" />
       </div>
 
     );
