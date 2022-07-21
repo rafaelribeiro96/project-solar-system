@@ -1,10 +1,10 @@
 body {
-  text-align: center;
   background-image: url('./images/background.png');
   color: beige;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Courier New , Courier , monospace;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .flexWrap {
@@ -21,33 +21,29 @@ body {
 }
 
 .tittle {
-  /* border: solid rgba(255, 228, 196, 0.37) 1px; */
-  border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 0;
+  font-size: 20px;
   padding: 1px;
   text-transform: uppercase;
-  font-size: 20px;
 }
 
 header {
-  text-transform: uppercase;
   font-size: 25px;
+  text-transform: uppercase;
 }
 
 /* missions */
-
 .missionsCss {
-  /* border: solid 1px red; */
   justify-content: center;
 }
 
 .missionCard {
-  /* border: solid 1px red; */
   background-color: rgba(99, 98, 98, 0.185);
+  border-radius: 10px;
   margin: 10px;
   padding: 15px;
   width: 350px;
-  border-radius: 10px;
 }
 
 .missionCard:hover {
@@ -55,32 +51,30 @@ header {
 }
 
 .titleMissionCard {
-  border: solid rgba(255, 228, 196, 0.37) 1px;
-  border-radius: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-weight: 900;
   background-color: rgba(0, 0, 0, 0.589);
+  border: solid rgba(255, 228, 196, 0.37) 1px;
+  border-radius: 0;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
   text-transform: uppercase;
 }
 
 .contentMissionCard {
-  border: solid rgba(255, 228, 196, 0.37) 1px;
-  border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.589);
+  border: solid rgba(255, 228, 196, 0.37) 1px;
+  border-radius: 0;
 }
 
 /* solar system e planets */
-
 .SolarSystem {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 100px;
   margin-right: 100px;
-  /* border: 1px solid red;  */
   min-height: 330px;
 }
 
@@ -94,58 +88,54 @@ header {
   align-self: center;
 }
 
-/* .imgPlanet:hover {
-  transform: scale(2);
-} */
-
 .Mercúrio {
-  width: calc(2.5 * 4.860px);
   animation: animePequeno 20s infinite;
+  width: calc(2.5 * 4.86px);
 }
 
 .Vênus {
-  width: calc(2.5 * 12.100px);
   animation: animePequeno 20s infinite;
+  width: calc(2.5 * 12.1px);
 }
 
 .Terra {
-  width: calc(2.5 * 12.760px);
   animation: animePequeno 20s infinite;
+  width: calc(2.5 * 12.76px);
 }
 
 .Marte {
-  width: calc(2.5 * 6.800px);
   animation: animePequeno 20s infinite;
+  width: calc(2.5 * 6.8px);
 }
 
 .Júpiter {
-  width: calc(2.5 * 143.000px);
   animation: animeGrande 20s infinite;
+  width: calc(2.5 * 143px);
 }
 
 .Saturno {
-  width: calc(2.5 * 120.000px);
   animation: animeGrande 20s infinite;
+  width: calc(2.5 * 120px);
 }
 
 .Urano {
-  width: calc(2.5 * 50.800px);
   animation: animeGrande 20s infinite;
+  width: calc(2.5 * 50.8px);
 }
 
 .Netuno {
-  width: calc(2.5 * 49.400px);
   animation: animeGrande 20s infinite;
+  width: calc(2.5 * 49.4px);
 }
 
 @keyframes animePequeno {
 
   0% {
-    transform:scale(1);
+    transform: scale(1);
   }
 
   50% {
-    transform:scale(2);
+    transform: scale(2);
   }
 
   100% {
@@ -156,11 +146,11 @@ header {
 @keyframes animeGrande {
 
   0% {
-    transform:scale(1);
+    transform: scale(1);
   }
 
   50% {
-    transform:scale(1.1);
+    transform: scale(1.1);
   }
 
   100% {
@@ -169,55 +159,54 @@ header {
 }
 
 /* hoever */
-
 .Mercúrio:hover {
-  width: 170px;
   animation: animeHover 5s infinite;
+  width: 170px;
 }
 
 .Vênus:hover {
-  width: 170px;
   animation: animeHover 5s infinite;
+  width: 170px;
 }
 
-.Terra:hover{
-  width: 170px;
+.Terra:hover {
   animation: animeHover 5s infinite;
+  width: 170px;
 }
 
 .Marte:hover {
-  width: 170px;
   animation: animeHover 5s infinite;
+  width: 170px;
 }
 
 .Júpiter:hover {
-  width: calc(2.6 * 143.000px);
   animation: animeHover 5s infinite;
+  width: calc(2.6 * 143px);
 }
 
 .Saturno:hover {
-  width: calc(2.7 * 120.000px);
   animation: animeHover 5s infinite;
+  width: calc(2.7 * 120px);
 }
 
 .Urano:hover {
-  width: 180px;
   animation: animeHover 5s infinite;
+  width: 180px;
 }
 
 .Netuno:hover {
-  width: 180px;
   animation: animeHover 5s infinite;
+  width: 180px;
 }
 
 @keyframes animeHover {
 
   0% {
-    transform:scale(1);
+    transform: scale(1);
   }
 
   50% {
-    transform:scale(1.1);
+    transform: scale(1.1);
   }
 
   100% {
@@ -230,31 +219,24 @@ header {
   .Mercúrio {
     width: calc(1.5 * 4.860px);
   }
-  
   .Vênus {
     width: calc(1.5 * 12.100px);
   }
-  
   .Terra {
     width: calc(1.5 * 12.760px);
   }
-  
   .Marte {
     width: calc(1.5 * 6.800px);
   }
-  
   .Júpiter {
     width: calc(1.5 * 143.000px);
   }
-  
   .Saturno {
     width: calc(1.5 * 120.000px);
   }
-  
   .Urano {
     width: calc(1.5 * 50.800px);
   }
-  
   .Netuno {
     width: calc(1.5 * 49.400px);
   }
@@ -266,31 +248,24 @@ header {
   .Mercúrio {
     width: calc(1 * 4.860px);
   }
-  
   .Vênus {
     width: calc(1 * 12.100px);
   }
-  
   .Terra {
     width: calc(1 * 12.760px);
   }
-  
   .Marte {
     width: calc(1 * 6.800px);
   }
-  
   .Júpiter {
     width: calc(1 * 143.000px);
   }
-  
   .Saturno {
     width: calc(1 * 120.000px);
   }
-  
   .Urano {
     width: calc(1 * 50.800px);
   }
-  
   .Netuno {
     width: calc(1 * 49.400px);
   }
