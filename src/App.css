@@ -1,3 +1,297 @@
-.App {
+body {
   text-align: center;
+  background-image: url('./images/background.png');
+  color: beige;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Courier New', Courier, monospace;
 }
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+}
+
+.obs {
+  font-size: 0.7em;
+}
+
+.tittle {
+  /* border: solid rgba(255, 228, 196, 0.37) 1px; */
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.705);
+  padding: 1px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+header {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/* missions */
+
+.missionsCss {
+  /* border: solid 1px red; */
+  justify-content: center;
+}
+
+.missionCard {
+  /* border: solid 1px red; */
+  background-color: rgba(99, 98, 98, 0.185);
+  margin: 10px;
+  padding: 15px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.missionCard:hover {
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.titleMissionCard {
+  border: solid rgba(255, 228, 196, 0.37) 1px;
+  border-radius: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.589);
+  text-transform: uppercase;
+}
+
+.contentMissionCard {
+  border: solid rgba(255, 228, 196, 0.37) 1px;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+/* solar system e planets */
+
+.SolarSystem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* border: 1px solid red; */
+  min-height: 330px;
+}
+
+.PlanetCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgPlanet {
+  align-self: center;
+}
+
+/* .imgPlanet:hover {
+  transform: scale(2);
+} */
+
+.Mercúrio {
+  width: calc(2.5 * 4.860px);
+  animation: animePequeno 20s infinite;
+}
+
+.Vênus {
+  width: calc(2.5 * 12.100px);
+  animation: animePequeno 20s infinite;
+}
+
+.Terra {
+  width: calc(2.5 * 12.760px);
+  animation: animePequeno 20s infinite;
+}
+
+.Marte {
+  width: calc(2.5 * 6.800px);
+  animation: animePequeno 20s infinite;
+}
+
+.Júpiter {
+  width: calc(2.5 * 143.000px);
+  animation: animeGrande 20s infinite;
+}
+
+.Saturno {
+  width: calc(2.5 * 120.000px);
+  animation: animeGrande 20s infinite;
+}
+
+.Urano {
+  width: calc(2.5 * 50.800px);
+  animation: animeGrande 20s infinite;
+}
+
+.Netuno {
+  width: calc(2.5 * 49.400px);
+  animation: animeGrande 20s infinite;
+}
+
+@keyframes animePequeno {
+
+  0% {
+    transform:scale(1);
+  }
+
+  50% {
+    transform:scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animeGrande {
+
+  0% {
+    transform:scale(1);
+  }
+
+  50% {
+    transform:scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* hoever */
+
+.Mercúrio:hover {
+  width: 170px;
+  animation: animeHover 5s infinite;
+}
+
+.Vênus:hover {
+  width: 170px;
+  animation: animeHover 5s infinite;
+}
+
+.Terra:hover{
+  width: 170px;
+  animation: animeHover 5s infinite;
+}
+
+.Marte:hover {
+  width: 170px;
+  animation: animeHover 5s infinite;
+}
+
+.Júpiter:hover {
+  width: calc(2.6 * 143.000px);
+  animation: animeHover 5s infinite;
+}
+
+.Saturno:hover {
+  width: calc(2.7 * 120.000px);
+  animation: animeHover 5s infinite;
+}
+
+.Urano:hover {
+  width: 180px;
+  animation: animeHover 5s infinite;
+}
+
+.Netuno:hover {
+  width: 180px;
+  animation: animeHover 5s infinite;
+}
+
+@keyframes animeHover {
+
+  0% {
+    transform:scale(1);
+  }
+
+  50% {
+    transform:scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* @media (min-width: 601px ) and (max-width: 999px) {
+
+  .Mercúrio {
+    width: calc(1.5 * 4.860px);
+  }
+  
+  .Vênus {
+    width: calc(1.5 * 12.100px);
+  }
+  
+  .Terra {
+    width: calc(1.5 * 12.760px);
+  }
+  
+  .Marte {
+    width: calc(1.5 * 6.800px);
+  }
+  
+  .Júpiter {
+    width: calc(1.5 * 143.000px);
+  }
+  
+  .Saturno {
+    width: calc(1.5 * 120.000px);
+  }
+  
+  .Urano {
+    width: calc(1.5 * 50.800px);
+  }
+  
+  .Netuno {
+    width: calc(1.5 * 49.400px);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .Mercúrio {
+    width: calc(1 * 4.860px);
+  }
+  
+  .Vênus {
+    width: calc(1 * 12.100px);
+  }
+  
+  .Terra {
+    width: calc(1 * 12.760px);
+  }
+  
+  .Marte {
+    width: calc(1 * 6.800px);
+  }
+  
+  .Júpiter {
+    width: calc(1 * 143.000px);
+  }
+  
+  .Saturno {
+    width: calc(1 * 120.000px);
+  }
+  
+  .Urano {
+    width: calc(1 * 50.800px);
+  }
+  
+  .Netuno {
+    width: calc(1 * 49.400px);
+  }
+} */

@@ -18,7 +18,7 @@ class Missions extends Component {
 
       <div data-testid="missions">
         <Title headline="Missões" />
-        <p>{mission}</p>
+        <p className="flexWrap missionsCss">{mission}</p>
       </div>
 
     );
